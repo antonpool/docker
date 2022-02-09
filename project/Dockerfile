@@ -1,4 +1,5 @@
-FROM ubuntu:18.10
-COPY . /home/antonpool
-WORKDIR /home/antonpool
-CMD bash file.sh
+FROM ubuntu
+WORKDIR /home/bash
+VOLUME -v /home/oem/docker:/home/bash
+COPY . /home/bach
+CMD bash /home/bash.sh
