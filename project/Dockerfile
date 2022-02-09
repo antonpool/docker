@@ -1,5 +1,5 @@
 FROM ubuntu
 WORKDIR /home/bash
-VOLUME -v /home/oem/docker:/home/bash
-COPY . /home/bach
+VOLUME /home/oem/docker:/home/bash
+COPY . /home/bash
 CMD bash /home/bash.sh
